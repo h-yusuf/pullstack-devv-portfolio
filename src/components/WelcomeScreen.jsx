@@ -28,11 +28,11 @@ const WelcomeScreen = ({ onWelcomeComplete }) => {
   };
 
   const currentColors = colors[theme] || colors.dark;
-  const portfolioUrl = "sahilfullstackportfolio.netlify.app";
+  const portfolioUrl = "pullstack.dev";
   const welcomeMessages = [
-    "Crafting digital experiences",
-    "Software Engineer",
-    "Full-stack development"
+    "High-performance web applications",
+    "Developer Program Team",
+    "Scalable backend systems"
   ];
 
   useEffect(() => {
@@ -194,13 +194,13 @@ const WelcomeScreen = ({ onWelcomeComplete }) => {
                 style={{ color: currentColors.primary }}
                 variants={contentVariants}
               >
-                <span className="inline-block">Hello</span>
+                <span className="inline-block">Welcome to</span>
                 <motion.span 
                   className="inline-block ml-2 sm:ml-3 relative"
                   style={{ color: currentColors.secondary }}
                   variants={contentVariants}
                 >
-                  There !
+                  Pullstack
                   <motion.span 
                     className="absolute -bottom-1 sm:-bottom-2 left-0 h-0.5 sm:h-1 w-full"
                     style={{ backgroundColor: currentColors.secondary }}
@@ -237,7 +237,7 @@ const WelcomeScreen = ({ onWelcomeComplete }) => {
                   animate={{ opacity: 1 }}
                   transition={{ delay: 1.5 }}
                 >
-                  (This is my portfolio website)
+                  (Specialized developer program team)
                 </motion.p>
               </motion.div>
             )}
@@ -266,7 +266,7 @@ const WelcomeScreen = ({ onWelcomeComplete }) => {
                   animate={{ opacity: 1 }}
                   transition={{ delay: 0.5 }}
                 >
-                  Loading my best work for you...
+                  Loading our portfolio for you...
                 </motion.p>
               </motion.div>
             )}

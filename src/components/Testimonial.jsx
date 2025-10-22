@@ -13,27 +13,27 @@ export const TestimonialSection = () => {
   const testimonials = [
     {
       id: 1,
-      name: "Alex Johnson",
-      role: "Product Director at TechCorp",
-      content: `Working with Sahil was seamless from day one. Not only did they deliver a full-stack solution ahead of schedule, but they also communicated clearly throughout the project. It's rare to find a developer who understands both the tech and the business side so well`,
+      name: "Dr. Jonathan Kwik",
+      role: "AI & International Law Expert",
+      content: `Working with Pullstack was a game-changer for our digital presence. Their team delivered a high-performance web application that handled complex logic with ease and scaled seamlessly. I'm impressed by their professionalism and technical depth.`,
       rating: 5,
-      image: "/testimonials/alex-johnson.png"
+      image: "/testimonials/guest.png"
     },
     {
       id: 2,
-      name: "Maria Chen",
-      role: "Senior UX Designer at DesignHub",
-      content: `I've reviewed hundreds of portfolios, and his work is truly exceptional. Tway the animations guide attention while maintaining performance is masterful. The gradient elements add depth without overwhelming.`,
+      name: "Dosen Universitas AMIKOM",
+      role: "RekomendasiWisataJogja Project",
+      content: `Pullstack helped our academic site go from concept to launch in record time. Their back-end system in Laravel and front-end work in React were spot on, and the end result is clean, reliable and easy to maintain.`,
       rating: 5,
-      image: "/testimonials/maria-chen.png"
+      image: "/testimonials/guest.png"
     },
     {
       id: 3,
-      name: "David Wilson",
-      role: "CTO at Startup Ventures",
-      content: `From wireframes to deployment, Sahil owned the entire stack with confidence and creativity. The final product is fast, reliable, and looks incredible. I wouldn't hesitate to work with them again.`,
+      name: "Dosen Universitas AMIKOM",
+      role: "Bank Sampah Portal - Yogyakarta",
+      content: `The collaboration with Pullstack on our Bank Sampah portal in Yogyakarta exceeded expectations. Their programmatic approach, clear communication and scalable architecture made the difference in our operations.`,
       rating: 5,
-      image: "/testimonials/David Wilson.png"
+      image: "/testimonials/guest.png"
     },
   ];
 
@@ -159,13 +159,13 @@ export const TestimonialSection = () => {
               className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight"
               variants={itemVariants}
             >
-              What People Say
+              What Our Clients Say
             </motion.h2>
             <motion.p
               className="text-base sm:text-lg text-muted-foreground mt-3 sm:mt-4 max-w-2xl mx-auto"
               variants={itemVariants}
             >
-              What Clients Will Say About Working with Me.
+              Real feedback from clients who've experienced Pullstack's excellence.
             </motion.p>
           </motion.div>
 

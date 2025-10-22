@@ -4,116 +4,101 @@ import { motion, useScroll, useTransform, AnimatePresence } from "framer-motion"
 
 const projects = [
   {
-    id: 7,
-    title: "NauraCare",
-    category: "Healthcare SaaS",
-    description: "Hospital management platform with multi-role access, patient tracking, and billing systems.",
-    image: "/projects/project7.png",
-    video: "/projects/videos/nauracare-demo.mp4",
-    tags: ["React", "Node.js", "MongoDB", "Stripe", "JWT Auth"],
-    demoUrl: "https://nauracare.vercel.app",
-    githubUrl: "https://github.com/Sahilmd01/neuracare.git",
+    id: 1,
+    title: "RekomendasiWisataJogja",
+    category: "Tourism Platform",
+    description: "Academic tourism recommendation platform built for Universitas AMIKOM Yogyakarta. Features intelligent recommendation engine and comprehensive travel guides.",
+    image: "/projects/project1.png",
+    video: "/projects/videos/wisata-demo.mp4",
+    tags: ["React", "Laravel", "PostgreSQL", "API"],
+    demoUrl: "#",
+    githubUrl: "#",
     featured: true,
     accentColor: "from-emerald-500 to-teal-600",
     status: "Live",
-    highlights: ["Multi-role system", "Patient management", "Payment integration"]
-  },
-  {
-    id: 1,
-    title: "Vante & Co.",
-    category: "E-commerce",
-    description: "Fashion marketplace with product recommendations and seamless checkout experience.",
-    image: "/projects/project1.png",
-    video: "/projects/videos/vante-demo.mp4",
-    tags: ["React", "Node.js", "Stripe", "Redis"],
-    demoUrl: "https://e-commerce-website-4w6a.vercel.app",
-    githubUrl: "https://github.com/Sahilmd01/E-commerce-website.git",
-    featured: true,
-    accentColor: "from-purple-500 to-indigo-600",
-    status: "Live",
-    highlights: ["Product catalog", "Shopping cart", "Payment processing"]
+    highlights: ["Recommendation engine", "Travel guides", "User ratings"]
   },
   {
     id: 2,
-    title: "Converse Pro",
-    category: "Real-time Communication",
-    description: "Chat platform with real-time messaging, media sharing, and user authentication.",
+    title: "Bank Sampah Portal",
+    category: "Environmental SaaS",
+    description: "Comprehensive waste management portal for Bank Sampah Yogyakarta. Streamlines operations with scalable architecture and real-time tracking.",
     image: "/projects/project2.png",
-    video: "/projects/videos/converse-demo.mp4",
-    tags: ["Socket.IO", "MongoDB", "React", "WebRTC"],
-    demoUrl: "https://converse-pro-frontend.vercel.app",
-    githubUrl: "https://github.com/Sahilmd01/converse-pro.git",
+    video: "/projects/videos/bank-sampah-demo.mp4",
+    tags: ["React", "Laravel", "PostgreSQL", "Real-time"],
+    demoUrl: "#",
+    githubUrl: "#",
     featured: true,
-    accentColor: "from-blue-500 to-cyan-600",
+    accentColor: "from-green-500 to-emerald-600",
     status: "Live",
-    highlights: ["Real-time chat", "Media sharing", "User authentication"]
+    highlights: ["Waste tracking", "Operations management", "Real-time updates"]
   },
   {
     id: 3,
-    title: "Blogni AI",
-    category: "Artificial Intelligence",
-    description: "AI-powered content generation platform with multi-language support.",
+    title: "E-Commerce Platform",
+    category: "E-commerce",
+    description: "Full-stack e-commerce solution with modern UI/UX, secure payment processing, and inventory management system.",
     image: "/projects/project3.png",
-    video: "/projects/videos/blogni-demo.mp4",
-    tags: ["Next.js", "Gemini AI", "Clerk Auth", "Redis"],
-    demoUrl: "https://blogni.vercel.app",
-    githubUrl: "https://github.com/Sahilmd01/Blogni.git",
-    accentColor: "from-amber-500 to-orange-600",
+    video: "/projects/videos/ecommerce-demo.mp4",
+    tags: ["React", "Node.js", "MongoDB", "Stripe"],
+    demoUrl: "#",
+    githubUrl: "#",
+    featured: true,
+    accentColor: "from-purple-500 to-indigo-600",
     status: "Live",
-    highlights: ["AI content generation", "Multi-language", "User accounts"]
+    highlights: ["Product catalog", "Payment integration", "Inventory system"]
   },
   {
     id: 4,
-    title: "Spendlix",
-    category: "FinTech",
-    description: "Financial tracking platform with expense management and budgeting features.",
+    title: "Real-time Chat Application",
+    category: "Communication",
+    description: "High-performance real-time messaging platform with WebSocket support, media sharing, and user presence tracking.",
     image: "/projects/project4.png",
-    video: "/projects/videos/spendlix-demo.mp4",
-    tags: ["React", "Chart.js", "Node.js", "Firebase"],
-    demoUrl: "https://spendlix.vercel.app/login",
-    githubUrl: "https://github.com/Sahilmd01/Spendlix.git",
-    accentColor: "from-rose-500 to-pink-600",
+    video: "/projects/videos/chat-demo.mp4",
+    tags: ["React", "Node.js", "Socket.IO", "MongoDB"],
+    demoUrl: "#",
+    githubUrl: "#",
+    accentColor: "from-blue-500 to-cyan-600",
     status: "Live",
-    highlights: ["Expense tracking", "Data visualization", "Budget planning"]
+    highlights: ["Real-time messaging", "Media sharing", "User presence"]
   },
   {
     id: 5,
-    title: "Eattoo",
-    category: "Food Tech",
-    description: "Food delivery platform with restaurant listings and order management.",
+    title: "Dashboard Analytics",
+    category: "Analytics",
+    description: "Enterprise-grade analytics dashboard with data visualization, real-time metrics, and customizable reports.",
     image: "/projects/project5.png",
-    video: "/projects/videos/eattoo-demo.mp4",
-    tags: ["React", "Redux", "Mapbox", "Stripe"],
-    demoUrl: "https://eattoo-food-delivery-website-frontend.onrender.com/",
-    githubUrl: "https://github.com/Sahilmd01/Eattoo-food-delivery-website.git",
-    accentColor: "from-violet-500 to-purple-600",
+    video: "/projects/videos/dashboard-demo.mp4",
+    tags: ["React", "Chart.js", "Node.js", "PostgreSQL"],
+    demoUrl: "#",
+    githubUrl: "#",
+    accentColor: "from-rose-500 to-pink-600",
     status: "Live",
-    highlights: ["Restaurant listings", "Order system", "Location services"]
+    highlights: ["Data visualization", "Real-time metrics", "Custom reports"]
   },
   {
     id: 6,
-    title: "JobQue",
-    category: "HR Tech",
-    description: "Job matching platform with candidate tracking and application management.",
+    title: "Content Management System",
+    category: "CMS",
+    description: "Scalable CMS built with modern technologies. Supports multi-user collaboration, version control, and content scheduling.",
     image: "/projects/project6.png",
-    video: "/projects/videos/jobque-demo.mp4",
-    tags: ["Next.js", "PostgreSQL", "Redis", "AI Integration"],
+    video: "/projects/videos/cms-demo.mp4",
+    tags: ["Next.js", "Laravel", "PostgreSQL", "Redis"],
     demoUrl: "#",
     githubUrl: "#",
-    accentColor: "from-orange-500 to-red-600",
-    status: "Development",
-    highlights: ["Job matching", "Candidate tracking", "Application system"]
+    accentColor: "from-orange-500 to-yellow-600",
+    status: "Live",
+    highlights: ["Multi-user support", "Version control", "Content scheduling"]
   }
 ];
 
 const categoryColors = {
-  "Healthcare SaaS": "from-emerald-500/20 to-teal-600/20 text-emerald-600 border-emerald-500/30",
+  "Tourism Platform": "from-emerald-500/20 to-teal-600/20 text-emerald-600 border-emerald-500/30",
+  "Environmental SaaS": "from-green-500/20 to-emerald-600/20 text-green-600 border-green-500/30",
   "E-commerce": "from-purple-500/20 to-indigo-600/20 text-purple-600 border-purple-500/30",
-  "Real-time Communication": "from-blue-500/20 to-cyan-600/20 text-blue-600 border-blue-500/30",
-  "Artificial Intelligence": "from-amber-500/20 to-orange-600/20 text-amber-600 border-amber-500/30",
-  "FinTech": "from-rose-500/20 to-pink-600/20 text-rose-600 border-rose-500/30",
-  "Food Tech": "from-violet-500/20 to-purple-600/20 text-violet-600 border-violet-500/30",
-  "HR Tech": "from-orange-500/20 to-red-600/20 text-orange-600 border-orange-500/30"
+  "Communication": "from-blue-500/20 to-cyan-600/20 text-blue-600 border-blue-500/30",
+  "Analytics": "from-rose-500/20 to-pink-600/20 text-rose-600 border-rose-500/30",
+  "CMS": "from-orange-500/20 to-yellow-600/20 text-orange-600 border-orange-500/30"
 };
 
 export const ProjectsSection = () => {
@@ -198,7 +183,7 @@ export const ProjectsSection = () => {
             viewport={{ once: true }}
           >
             <Sparkles className="h-4 w-4" />
-            My Projects
+            Our Portfolio
           </motion.div>
 
           <motion.h2 
@@ -208,8 +193,8 @@ export const ProjectsSection = () => {
             transition={{ duration: 0.8, delay: 0.1 }}
             viewport={{ once: true }}
           >
-            Project
-            <span className="block text-primary">Portfolio</span>
+            Our Featured
+            <span className="block text-primary">Projects</span>
           </motion.h2>
 
           <motion.p 
@@ -219,7 +204,7 @@ export const ProjectsSection = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            A collection of projects I've built to showcase my skills in full-stack development and modern web technologies.
+            Showcase of high-performance applications built with precision, scalability, and modern technologies.
           </motion.p>
         </motion.div>
 
@@ -476,9 +461,9 @@ export const ProjectsSection = () => {
               Get In Touch
             </motion.div>
 
-            <h3 className="text-2xl md:text-3xl font-bold mb-4">Like what you see?</h3>
+            <h3 className="text-2xl md:text-3xl font-bold mb-4">Ready to Start Your Project?</h3>
             <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
-              I'm always open to discussing new opportunities and interesting projects.
+              Let's discuss how Pullstack can help bring your vision to life with high-performance solutions.
             </p>
             
             <div className="flex flex-col sm:flex-row justify-center gap-4">
@@ -488,12 +473,12 @@ export const ProjectsSection = () => {
                 whileTap={{ scale: 0.95 }}
                 className="inline-flex items-center justify-center gap-3 px-8 py-4 rounded-2xl font-medium bg-primary text-primary-foreground hover:bg-primary/90 transition-all duration-300"
               >
-                Contact Me
+                Get In Touch
                 <ArrowRight size={18} />
               </motion.a>
               
               <motion.a
-                href="https://github.com/sahilmd01"
+                href="https://github.com/pullstack"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.05 }}
