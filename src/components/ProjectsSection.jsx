@@ -5,13 +5,28 @@ import { motion, useScroll, useTransform, AnimatePresence } from "framer-motion"
 const projects = [
   {
     id: 1,
+    title: "BeePlus",
+    category: "Business Platform",
+    description: "Comprehensive business management platform designed to streamline operations, enhance productivity, and drive growth for enterprises.",
+    image: "/projects/beeplus.png",
+    video: "/projects/videos/beeplus-demo.mp4",
+    tags: ["React", "Laravel", "PostgreSQL", "API"],
+    demoUrl: "https://beeplus.id/",
+    githubUrl: "#",
+    featured: true,
+    accentColor: "from-yellow-500 to-orange-600",
+    status: "Live",
+    highlights: ["Business management", "Operations streamline", "Enterprise solutions"]
+  },
+  {
+    id: 2,
     title: "RekomendasiWisataJogja",
     category: "Tourism Platform",
     description: "Academic tourism recommendation platform built for Universitas AMIKOM Yogyakarta. Features intelligent recommendation engine and comprehensive travel guides.",
-    image: "/projects/project1.png",
+    image: "/projects/rekomendasiwisatajogja.png",
     video: "/projects/videos/wisata-demo.mp4",
     tags: ["React", "Laravel", "PostgreSQL", "API"],
-    demoUrl: "#",
+    demoUrl: "https://rekomendasiwisatajogja.com/",
     githubUrl: "#",
     featured: true,
     accentColor: "from-emerald-500 to-teal-600",
@@ -19,41 +34,40 @@ const projects = [
     highlights: ["Recommendation engine", "Travel guides", "User ratings"]
   },
   {
-    id: 2,
-    title: "Bank Sampah Portal",
-    category: "Environmental SaaS",
-    description: "Comprehensive waste management portal for Bank Sampah Yogyakarta. Streamlines operations with scalable architecture and real-time tracking.",
-    image: "/projects/project2.png",
-    video: "/projects/videos/bank-sampah-demo.mp4",
-    tags: ["React", "Laravel", "PostgreSQL", "Real-time"],
-    demoUrl: "#",
+    id: 3,
+    title: "Dr. Jonathan Kwik",
+    category: "Professional Portfolio",
+    description: "Professional portfolio website for Dr. Jonathan Kwik, AI & International Law Expert. Showcasing expertise, research, and professional achievements.",
+    image: "/projects/jonathankwik.png",
+    video: "/projects/videos/jonathan-demo.mp4",
+    tags: ["Next.js", "React", "Tailwind CSS", "CMS"],
+    demoUrl: "https://jonathankwik.com/",
     githubUrl: "#",
     featured: true,
-    accentColor: "from-green-500 to-emerald-600",
+    accentColor: "from-blue-500 to-indigo-600",
     status: "Live",
-    highlights: ["Waste tracking", "Operations management", "Real-time updates"]
+    highlights: ["Professional showcase", "Research portfolio", "Expert credentials"]
   },
   {
-    id: 3,
+    id: 4,
     title: "E-Commerce Platform",
     category: "E-commerce",
     description: "Full-stack e-commerce solution with modern UI/UX, secure payment processing, and inventory management system.",
-    image: "/projects/project3.png",
+    image: "/projects/project4.png",
     video: "/projects/videos/ecommerce-demo.mp4",
     tags: ["React", "Node.js", "MongoDB", "Stripe"],
     demoUrl: "#",
     githubUrl: "#",
-    featured: true,
     accentColor: "from-purple-500 to-indigo-600",
     status: "Live",
     highlights: ["Product catalog", "Payment integration", "Inventory system"]
   },
   {
-    id: 4,
+    id: 5,
     title: "Real-time Chat Application",
     category: "Communication",
     description: "High-performance real-time messaging platform with WebSocket support, media sharing, and user presence tracking.",
-    image: "/projects/project4.png",
+    image: "/projects/project5.png",
     video: "/projects/videos/chat-demo.mp4",
     tags: ["React", "Node.js", "Socket.IO", "MongoDB"],
     demoUrl: "#",
@@ -63,11 +77,11 @@ const projects = [
     highlights: ["Real-time messaging", "Media sharing", "User presence"]
   },
   {
-    id: 5,
+    id: 6,
     title: "Dashboard Analytics",
     category: "Analytics",
     description: "Enterprise-grade analytics dashboard with data visualization, real-time metrics, and customizable reports.",
-    image: "/projects/project5.png",
+    image: "/projects/project6.png",
     video: "/projects/videos/dashboard-demo.mp4",
     tags: ["React", "Chart.js", "Node.js", "PostgreSQL"],
     demoUrl: "#",
@@ -75,30 +89,16 @@ const projects = [
     accentColor: "from-rose-500 to-pink-600",
     status: "Live",
     highlights: ["Data visualization", "Real-time metrics", "Custom reports"]
-  },
-  {
-    id: 6,
-    title: "Content Management System",
-    category: "CMS",
-    description: "Scalable CMS built with modern technologies. Supports multi-user collaboration, version control, and content scheduling.",
-    image: "/projects/project6.png",
-    video: "/projects/videos/cms-demo.mp4",
-    tags: ["Next.js", "Laravel", "PostgreSQL", "Redis"],
-    demoUrl: "#",
-    githubUrl: "#",
-    accentColor: "from-orange-500 to-yellow-600",
-    status: "Live",
-    highlights: ["Multi-user support", "Version control", "Content scheduling"]
   }
 ];
 
 const categoryColors = {
+  "Business Platform": "from-yellow-500/20 to-orange-600/20 text-yellow-600 border-yellow-500/30",
   "Tourism Platform": "from-emerald-500/20 to-teal-600/20 text-emerald-600 border-emerald-500/30",
-  "Environmental SaaS": "from-green-500/20 to-emerald-600/20 text-green-600 border-green-500/30",
+  "Professional Portfolio": "from-blue-500/20 to-indigo-600/20 text-blue-600 border-blue-500/30",
   "E-commerce": "from-purple-500/20 to-indigo-600/20 text-purple-600 border-purple-500/30",
   "Communication": "from-blue-500/20 to-cyan-600/20 text-blue-600 border-blue-500/30",
-  "Analytics": "from-rose-500/20 to-pink-600/20 text-rose-600 border-rose-500/30",
-  "CMS": "from-orange-500/20 to-yellow-600/20 text-orange-600 border-orange-500/30"
+  "Analytics": "from-rose-500/20 to-pink-600/20 text-rose-600 border-rose-500/30"
 };
 
 export const ProjectsSection = () => {
@@ -183,7 +183,7 @@ export const ProjectsSection = () => {
             viewport={{ once: true }}
           >
             <Sparkles className="h-4 w-4" />
-            Our Portfolio
+            Featured Work
           </motion.div>
 
           <motion.h2 
