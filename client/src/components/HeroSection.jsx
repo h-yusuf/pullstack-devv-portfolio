@@ -9,27 +9,27 @@ export const HeroSection = () => {
   const [displayedCode, setDisplayedCode] = useState("");
 
   const codeSnippets = [
-    "import { FullStackDeveloper } from 'sahil.dev';",
+    "import { Pullstack } from 'pullstack.dev';",
     "",
-    "const developer = new FullStackDeveloper({",
-    "  name: 'Sahil',",
-    "  stack: ['React', 'Next.js', 'Node.js', 'TypeScript'],",
-    "  focus: 'Building scalable web applications',",
-    "  status: 'Open to new opportunities'",
+    "const team = new Pullstack({",
+    "  expertise: 'High-performance web apps & scalable backends',",
+    "  stack: ['React', 'Laravel', 'Vue.js'],",
+    "  principles: ['Precision', 'Scalability', 'Performance'],",
+    "  code: 'Clean, maintainable, production-ready'",
     "});",
     "",
-    "await developer.launchPortfolio();",
-    "// Featured: E-commerce, SaaS, Enterprise, Startup MVPs",
+    "await team.buildGrowth();",
+    "// Startups, Enterprises, Real Business Impact",
     "",
-    "developer.connect();",
-    "console.log('🚀 Let’s build something exceptional together!');"
+    "team.connect();",
+    "console.log('🚀 Let's build with precision and scale!');"
   ];
 
   const achievements = [
-    { number: "3+", label: "Years in Production", icon: <Shield className="h-3 w-3" /> },
-    { number: "15+", label: "Projects Delivered", icon: <TrendingUp className="h-3 w-3" /> },
-    { number: "100%", label: "Client Satisfaction", icon: <Award className="h-3 w-3" /> },
-    { number: "∞", label: "Problems Solved", icon: <Zap className="h-3 w-3" /> }
+    { number: "20+", label: "Projects Delivered", icon: <TrendingUp className="h-3 w-3" /> },
+    { number: "99,9%", label: "Client Satisfaction", icon: <Award className="h-3 w-3" /> },
+    { number: "3+", label: "Team Members", icon: <Users className="h-3 w-3" /> },
+    { number: "5+", label: "Tech Stacks", icon: <Code className="h-3 w-3" /> }
   ];
 
   useEffect(() => {
@@ -95,18 +95,18 @@ export const HeroSection = () => {
           
           <div className="flex-1 text-center lg:text-left max-w-2xl mx-auto lg:mx-0">
             <motion.div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-8 backdrop-blur-sm" variants={{ hidden: { y: 30, opacity: 0 }, visible: { y: 0, opacity: 1, transition: { duration: 0.8 } } }}>
-              <Briefcase className="h-4 w-4" /> Currently Accepting new Opportunities
+              <Briefcase className="h-4 w-4" /> Open for New Projects & Partnerships
             </motion.div>
 
             <motion.h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight tracking-tight" variants={{ hidden: { y: 30, opacity: 0 }, visible: { y: 0, opacity: 1, transition: { duration: 0.8 } } }}>
-              <span className="block text-foreground">I'm Sahil</span>
+              <span className="block text-foreground">Welcome to</span>
               <motion.span className="block bg-gradient-to-r from-primary via-purple-600 to-pink-600 bg-clip-text text-transparent mt-2" animate={{ backgroundPosition: ['0%', '100%', '0%'] }} transition={{ duration: 8, repeat: Infinity }} style={{ backgroundSize: '200% 100%' }}>
-                Full-Stack Engineer
+                Pullstack
               </motion.span>
             </motion.h1>
 
             <motion.p className="text-lg sm:text-xl text-muted-foreground mt-6 leading-relaxed max-w-2xl" variants={{ hidden: { y: 30, opacity: 0 }, visible: { y: 0, opacity: 1, transition: { duration: 0.8 } } }}>
-              I build <span className="text-primary font-semibold">high-performance web applications</span> that drive business growth. Specializing in React, Node.js, and scalable architecture for startups and enterprises.
+              A specialized developer program team dedicated to crafting <span className="text-primary font-semibold">high-performance web applications</span> and scalable backend systems. We write clean, maintainable code that powers real business growth using React, Laravel, and Vue.js.
             </motion.p>
 
             <motion.div className="grid grid-cols-2 sm:grid-cols-4 gap-4 my-8" variants={{ hidden: { y: 30, opacity: 0 }, visible: { y: 0, opacity: 1, transition: { duration: 0.8 } } }}>
@@ -124,24 +124,24 @@ export const HeroSection = () => {
             <motion.div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start" variants={{ hidden: { y: 30, opacity: 0 }, visible: { y: 0, opacity: 1, transition: { duration: 0.8 } } }}>
               <motion.a href="#projects" className="group relative overflow-hidden px-8 py-4 rounded-xl font-semibold bg-gradient-to-r from-primary to-purple-600 text-primary-foreground shadow-lg hover:shadow-xl text-sm flex items-center justify-center gap-3" whileHover={{ scale: 1.05, y: -2 }} whileTap={{ scale: 0.95 }}>
                 <Code className="h-5 w-5" /> 
-                <span>View Case Studies</span>
+                <span>View Our Work</span>
                 <TrendingUp className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
               </motion.a>
               
               <motion.a href="#contact" className="group relative overflow-hidden px-8 py-4 rounded-xl font-semibold border border-primary/50 text-foreground hover:border-primary transition-all duration-300 bg-background/80 backdrop-blur-sm text-sm flex items-center justify-center gap-3" whileHover={{ scale: 1.05, y: -2 }} whileTap={{ scale: 0.95 }}>
                 <Mail className="h-4 w-4" /> 
-                <span>Technical Interview</span>
+                <span>Start a Project</span>
               </motion.a>
               
-              <motion.a href="/resume.pdf" download className="group relative overflow-hidden px-6 py-4 rounded-xl font-semibold border border-border text-muted-foreground hover:border-primary/30 transition-all duration-300 bg-background/60 backdrop-blur-sm text-sm flex items-center justify-center gap-2" whileHover={{ scale: 1.05, y: -2 }} whileTap={{ scale: 0.95 }}>
+              <motion.a href="/pullstack-portfolio.pdf" download className="group relative overflow-hidden px-6 py-4 rounded-xl font-semibold border border-border text-muted-foreground hover:border-primary/30 transition-all duration-300 bg-background/60 backdrop-blur-sm text-sm flex items-center justify-center gap-2" whileHover={{ scale: 1.05, y: -2 }} whileTap={{ scale: 0.95 }}>
                 <Download className="h-4 w-4" /> 
-                <span>Download CV</span>
+                <span>Our Portfolio</span>
               </motion.a>
             </motion.div>
 
             <motion.div className="mt-6 text-center lg:text-left" variants={{ hidden: { y: 30, opacity: 0 }, visible: { y: 0, opacity: 1, transition: { duration: 0.8 } } }}>
               <div className="text-sm text-muted-foreground">
-                🚀 <span className="text-primary font-semibold">Available Immediately</span> for Full-Stack and Frontend roles
+                🚀 Every project built with <span className="text-primary font-semibold">precision, scalability, and performance</span>
               </div>
             </motion.div>
           </div>
@@ -157,7 +157,7 @@ export const HeroSection = () => {
                     <div className="w-3 h-3 rounded-full bg-green-400/80"></div>
                   </div>
                   <div className="flex-1 text-center">
-                    <div className="text-sm font-mono font-semibold text-muted-foreground">portfolio.js</div>
+                    <div className="text-sm font-mono font-semibold text-muted-foreground">pullstack.js</div>
                   </div>
                   <div className="w-4 h-4 bg-green-400/20 rounded-full animate-pulse"></div>
                 </div>
@@ -175,7 +175,7 @@ export const HeroSection = () => {
                             transition-opacity duration-150 ease-in-out
                             ${line.includes("import") ? "text-purple-400 font-semibold" : 
                               line.includes("const") || line.includes("new") ? "text-blue-400 font-semibold" :
-                              line.includes("React") || line.includes("Node.js") || line.includes("TypeScript") ? "text-cyan-400" :
+                              line.includes("React") || line.includes("Vue.js") || line.includes("TypeScript") ? "text-cyan-400" :
                               line.includes("FullStackDeveloper") ? "text-emerald-400 font-semibold" :
                               line.includes("//") ? "text-muted-foreground italic" :
                               line.includes("await") || line.includes("connect") ? "text-yellow-400" :
@@ -209,12 +209,12 @@ export const HeroSection = () => {
                 
                 <motion.div className="absolute -top-3 -left-3 bg-background/90 backdrop-blur-sm px-4 py-2 rounded-xl border border-border shadow-lg flex items-center gap-2" initial={{ scale: 0, rotate: -180 }} animate={{ scale: 1, rotate: 0 }} transition={{ delay: 1.5, type: "spring" }}>
                   <Award className="h-4 w-4 text-amber-500" />
-                  <span className="text-sm font-semibold text-foreground">Solutions</span>
+                  <span className="text-sm font-semibold text-foreground">Excellence</span>
                 </motion.div>
                 
                 <motion.div className="absolute -bottom-3 left-1/2 transform -translate-x-1/2 bg-background/90 backdrop-blur-sm px-4 py-2 rounded-xl border border-border shadow-lg text-center" initial={{ scale: 0, y: 20 }} animate={{ scale: 1, y: 0 }} transition={{ delay: 2, type: "spring" }}>
-                  <div className="text-xs font-mono text-muted-foreground">Built with</div>
-                  <div className="text-sm font-bold text-foreground">Modern Tech</div>
+                  <div className="text-xs font-mono text-muted-foreground">Powered by</div>
+                  <div className="text-sm font-bold text-foreground">Developer Excellence</div>
                 </motion.div>
               </motion.div>
             </div>
@@ -225,7 +225,7 @@ export const HeroSection = () => {
       <motion.div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center" initial={{ opacity: 0, y: 20 }} animate={{ opacity: [0, 1, 1, 0], y: [0, 6, 0, -6] }} transition={{ duration: 3, repeat: Infinity, repeatDelay: 0.5 }}>
         <motion.div className="text-xs text-primary mb-3 flex items-center gap-2 px-4 py-2 rounded-full bg-background/80 backdrop-blur-sm border border-border shadow-lg" whileHover={{ scale: 1.05 }}>
           <MousePointerClick className="h-3 w-3" />
-          <span>Explore Technical Portfolio</span>
+          <span>Explore Our Expertise</span>
         </motion.div>
         <motion.div animate={{ y: [0, 4, 0] }} transition={{ duration: 2, repeat: Infinity }} className="w-5 h-8 border-2 border-primary/30 rounded-full flex justify-center">
           <motion.div animate={{ y: [0, 8, 0] }} transition={{ duration: 2, repeat: Infinity }} className="w-1 h-2 bg-primary rounded-full mt-2" />

@@ -83,7 +83,7 @@ export const ContactSection = () => {
       if (response.ok) {
         toast({
           title: "Message sent! 🎉",
-          description: "I'll get back to you within 24 hours.",
+          description: "Our team will get back to you within 24 hours.",
           variant: "success",
           className: "bg-green-600 text-white dark:bg-green-500 border border-green-700 shadow-lg"
         });
@@ -94,7 +94,7 @@ export const ContactSection = () => {
     } catch (error) {
       toast({
         title: "Oops! Something went wrong",
-        description: "Please try again or email me directly at codewithkinu@gmail.com",
+        description: "Please try again or email us at pullstack.devv@gmail.com",
         variant: "destructive"
       });
     } finally {
@@ -113,7 +113,7 @@ export const ContactSection = () => {
             Get In Touch
           </h2>
           <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto">
-            Have a project in mind or just want to say hi? My inbox is always open.
+            Have a project in mind? We'd love to hear from you. Get in touch with our team today.
           </p>
         </div>
 
@@ -133,10 +133,10 @@ export const ContactSection = () => {
                 <div>
                   <p className="text-xs sm:text-sm text-muted-foreground">Email</p>
                   <a
-                    href="mailto:codewithkinu@gmail.com"
+                    href="mailto:pullstack.devv@gmail.com"
                     className="text-sm sm:text-base font-medium hover:text-primary transition-colors"
                   >
-                    codewithkinu@gmail.com
+                    pullstack.devv@gmail.com
                   </a>
                 </div>
               </div>
@@ -148,10 +148,10 @@ export const ContactSection = () => {
                 <div>
                   <p className="text-xs sm:text-sm text-muted-foreground">Phone</p>
                   <a
-                    href="tel:+919315145594"
+                    href="tel:+6289527124144"
                     className="text-sm sm:text-base font-medium hover:text-primary transition-colors"
                   >
-                    +91 9315145594
+                    +62 895 2712 4144
                   </a>
                 </div>
               </div>
@@ -163,35 +163,35 @@ export const ContactSection = () => {
                 <div>
                   <p className="text-xs sm:text-sm text-muted-foreground">Location</p>
                   <span className="text-sm sm:text-base font-medium">
-                    Bengaluru, Karnataka India
+                    Sleman, Yogyakarta, Indonesia
                   </span>
                 </div>
               </div>
             </div>
 
             <div className="pt-6 sm:pt-8">
-              <h4 className="font-medium mb-3 sm:mb-4 text-xs sm:text-sm text-muted-foreground">Find me on</h4>
+              <h4 className="font-medium mb-3 sm:mb-4 text-xs sm:text-sm text-muted-foreground">Find us on</h4>
               <div className="flex gap-2 sm:gap-3">
                 {[
                   {
                     icon: Linkedin,
                     label: "LinkedIn",
-                    url: "https://www.linkedin.com/in/codewithkinu",
+                    url: "https://www.linkedin.com/company/pullstack",
                   },
                   {
                     icon: Twitter,
                     label: "Twitter",
-                    url: "#",
+                    url: "https://twitter.com/pullstack",
                   },
                   {
                     icon: Github,
                     label: "GitHub",
-                    url: "https://github.com/Sahilmd01",
+                    url: "https://github.com/h-yusuf",
                   },
                   {
                     icon: Instagram,
                     label: "Instagram",
-                    url: "https://www.instagram.com/dubbinut",
+                    url: "https://www.instagram.com/apitt_m.y",
                   },
                 ].map((social, index) => (
                   <a
@@ -213,7 +213,7 @@ export const ContactSection = () => {
           <div className="p-6 sm:p-8 rounded-xl sm:rounded-2xl bg-card border border-border shadow-sm">
             <h3 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6 flex items-center gap-2">
               <span className="w-3 sm:w-4 h-3 sm:h-4 rounded-full bg-primary"></span>
-              Send Me a Message
+              Send Us a Message
             </h3>
 
             <form className="space-y-4 sm:space-y-6" onSubmit={handleSubmit}>

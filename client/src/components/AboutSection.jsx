@@ -8,31 +8,31 @@ export const AboutSection = () => {
   const [counter, setCounter] = useState(0);
 
   const achievements = [
-    { number: "15+", label: "Projects", icon: <Briefcase className="h-5 w-5" />, suffix: "" },
-    { number: "1", label: "Years Exp", icon: <Calendar className="h-5 w-5" />, suffix: "+" },
-    { number: "99", label: "Success", icon: <Target className="h-5 w-5" />, suffix: "%" },
-    { number: "10", label: "Clients", icon: <User className="h-5 w-5" />, suffix: "+" }
+    { number: "20+", label: "Projects", icon: <Briefcase className="h-5 w-5" />, suffix: "" },
+    { number: "5+", label: "Years Exp", icon: <Calendar className="h-5 w-5" />, suffix: "+" },
+    { number: "100", label: "Success", icon: <Target className="h-5 w-5" />, suffix: "%" },
+    { number: "30+", label: "Clients", icon: <User className="h-5 w-5" />, suffix: "+" }
   ];
 
   const techStack = [
-    { category: "Frontend", items: ["React", "Next.js", "TypeScript","JavaScript","HTML", "Tailwind"] },
-    { category: "Backend", items: ["Node.js", "Express", "Java", "Python"] },
-    { category: "Cloud", items: ["AWS", "Docker", "Vercel", "MongoDB"] }
+    { category: "Frontend", items: ["React", "Next.js", "Vue.js", "TypeScript", "Tailwind CSS"] },
+    { category: "Backend", items: ["Node.js", "Laravel", "Express", "Python", "Java"] },
+    { category: "Cloud & DevOps", items: ["AWS", "Docker", "Kubernetes", "CI/CD", "MongoDB"] }
   ];
 
-  const features = ["Full-stack expertise", "Clean, maintainable code", "Performance optimization", "Agile methodology", "24/7 support", "Timely delivery"];
+  const features = ["Multidisciplinary expertise", "Scalable architecture", "Performance-first approach", "UI/UX excellence", "Agile & collaborative", "Proven track record"];
 
   const socialLinks = [
-    { icon: <Github className="h-5 w-5" />, href: "https://www.github.com/sahilmd01" },
-    { icon: <Linkedin className="h-5 w-5" />, href: "https://www.linkedin.com/in/codewithkinu" },
-    { icon: <Twitter className="h-5 w-5" />, href: "#" },
-    { icon: <Mail className="h-5 w-5" />, href: "https://maitto:sahilmd.dev@gmail.com" }
+    { icon: <Github className="h-5 w-5" />, href: "https://www.github.com/pullstack" },
+    { icon: <Linkedin className="h-5 w-5" />, href: "https://www.linkedin.com/company/pullstack" },
+    { icon: <Twitter className="h-5 w-5" />, href: "https://twitter.com/pullstack" },
+    { icon: <Mail className="h-5 w-5" />, href: "mailto:hello@pullstack.dev" }
   ];
 
   const tabContent = {
-    personal: "Passionate about creating digital solutions that make a difference. When I'm not coding, I'm exploring new technologies, contributing to open-source, and mentoring aspiring developers.",
-    professional: "With 1+ years in full-stack development, I've delivered 15+ successful projects using modern technologies. I specialize in scalable architecture and performance optimization.",
-    approach: "I believe in clean code, thorough testing, and user-centered design. My process emphasizes collaboration, agile methodologies, and continuous improvement."
+    personal: "Pullstack is a collective of passionate developers united by a mission to build exceptional digital products. We thrive on innovation, collaboration, and pushing the boundaries of what's possible in web development.",
+    professional: "With 5+ years of combined experience, we've delivered 20+ successful projects for startups, enterprises, and creative ventures. Our expertise spans React, Laravel, Vue.js, and modern API-driven architectures.",
+    approach: "We believe in developer-driven excellence, clean architecture, and user-centered design. Our process emphasizes precision, scalability, and innovation - ensuring every project reflects our commitment to quality."
   };
 
   useEffect(() => {
@@ -65,14 +65,14 @@ export const AboutSection = () => {
               <Sparkles className="h-4 sm:h-5 w-4 sm:w-5 text-primary animate-pulse" />
               <div className="absolute -top-1 -right-1 w-2 h-2 bg-primary rounded-full animate-ping" />
             </div>
-            <span className="text-sm sm:text-base font-semibold text-primary tracking-wide">ABOUT ME</span>
+            <span className="text-sm sm:text-base font-semibold text-primary tracking-wide">ABOUT PULLSTACK</span>
           </div>
           <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold mb-4 sm:mb-6">
-            <span className="bg-gradient-to-r from-foreground to-primary bg-clip-text text-transparent">Transforming</span>
-            <span className="block text-primary animate-pulse">Ideas Into Reality</span>
+            <span className="bg-gradient-to-r from-foreground to-primary bg-clip-text text-transparent">Building</span>
+            <span className="block text-primary animate-pulse">Exceptional Digital Products</span>
           </h1>
           <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Building digital experiences that combine <span className="text-primary font-semibold">innovation</span>, <span className="text-primary font-semibold">performance</span>, and <span className="text-primary font-semibold">elegance</span>
+            Crafting complete solutions with <span className="text-primary font-semibold">precision</span>, <span className="text-primary font-semibold">scalability</span>, and <span className="text-primary font-semibold">innovation</span>
           </p>
         </div>
 
@@ -92,7 +92,7 @@ export const AboutSection = () => {
                   {/* Profile Image */}
                   <div className="relative flex-shrink-0">
                     <div className="w-28 h-28 sm:w-32 sm:h-32 rounded-2xl overflow-hidden border-4 border-primary/20 shadow-2xl transition-all duration-500 group-hover:border-primary/40 group-hover:scale-105 md:group-hover:scale-110 relative">
-                      <img src="/profile-logo.png" alt="MD Sahil" className="w-full h-full object-cover" />
+                      <img src="/logo.svg" alt="Pullstack" className="w-full h-full object-cover" />
                       <div className="absolute -bottom-2 -right-2 w-6 h-6 sm:w-8 sm:h-8 bg-green-500 rounded-full border-4 border-background flex items-center justify-center">
                         <div className="w-2 h-2 bg-green-300 rounded-full animate-pulse" />
                       </div>
@@ -101,8 +101,8 @@ export const AboutSection = () => {
 
                   {/* Achievements */}
                   <div className="flex-1 text-center md:text-left">
-                    <h2 className="text-2xl sm:text-3xl font-bold mb-1 sm:mb-2">MD Sahil</h2>
-                    <p className="text-primary text-base sm:text-lg font-semibold mb-3 sm:mb-4">Full Stack Developer</p>
+                    <h2 className="text-2xl sm:text-3xl font-bold mb-1 sm:mb-2">Pullstack</h2>
+                    <p className="text-primary text-base sm:text-lg font-semibold mb-3 sm:mb-4">Developer Program Team</p>
                     <div className="grid grid-cols-2 gap-3 sm:gap-4 mb-4 sm:mb-6">
                       {achievements.map((achievement, index) => (
                         <div key={index} className={`p-2 sm:p-3 rounded-xl bg-background/50 border border-border transition-all duration-300 hover:scale-105 hover:border-primary/30 ${counter === index ? 'bg-primary/10 border-primary/50' : ''}`}>
@@ -179,13 +179,13 @@ export const AboutSection = () => {
           <div className="space-y-6 sm:space-y-8">
             {/* Work Together */}
             <div className="bg-card/50 border border-border rounded-3xl p-6 sm:p-8 backdrop-blur-xl shadow-2xl transition-all duration-500 hover:shadow-3xl hover:border-primary/40 hover:bg-card/60">
-              <h3 className="text-lg sm:text-2xl font-bold mb-4 sm:mb-6 text-center">Let's Work Together</h3>
+              <h3 className="text-lg sm:text-2xl font-bold mb-4 sm:mb-6 text-center">Start Your Project</h3>
               <div className="flex flex-col sm:flex-row sm:space-x-4 space-y-3 sm:space-y-0">
                 <a href="#contact" className="flex-1 block w-full p-3 sm:p-4 bg-primary text-primary-foreground rounded-xl text-center font-semibold transition-all duration-300 hover:bg-primary/90 hover:scale-105 hover:shadow-lg group">
-                  <div className="flex items-center justify-center gap-2 sm:gap-3"><User className="h-4 sm:h-5 w-4 sm:w-5 group-hover:scale-110 transition-transform duration-300" />Start a Project</div>
+                  <div className="flex items-center justify-center gap-2 sm:gap-3"><Mail className="h-4 sm:h-5 w-4 sm:w-5 group-hover:scale-110 transition-transform duration-300" />Get in Touch</div>
                 </a>
-                <a href="/md-sahil-resume.pdf" className="flex-1 block w-full p-3 sm:p-4 border border-border rounded-xl text-center font-semibold transition-all duration-300 hover:bg-accent hover:border-primary/30 hover:scale-105 hover:shadow-lg group" download>
-                  <div className="flex items-center justify-center gap-2 sm:gap-3"><Download className="h-4 sm:h-5 w-4 sm:w-5 group-hover:translate-y-0.5 transition-transform duration-300" />Download Resume</div>
+                <a href="/pullstack-portfolio.pdf" className="flex-1 block w-full p-3 sm:p-4 border border-border rounded-xl text-center font-semibold transition-all duration-300 hover:bg-accent hover:border-primary/30 hover:scale-105 hover:shadow-lg group" download>
+                  <div className="flex items-center justify-center gap-2 sm:gap-3"><Download className="h-4 sm:h-5 w-4 sm:w-5 group-hover:translate-y-0.5 transition-transform duration-300" />Our Portfolio</div>
                 </a>
               </div>
 

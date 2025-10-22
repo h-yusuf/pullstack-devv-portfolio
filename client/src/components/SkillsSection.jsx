@@ -24,42 +24,46 @@ import vscodeIcon from "@/assets/icons/vscode.png";
 import clearkIcon from "@/assets/icons/cleark.png";
 import SQLIcon from "@/assets/icons/sql.png";
 import MySQLIcon from "@/assets/icons/mysql.png";
+import LaravelIcon from "@/assets/icons/laravel.png";
+import vueIcon from "@/assets/icons/vue.png";
+import kubernetesIcon from "@/assets/icons/kubernetes.png";
+import awsIcon from "@/assets/icons/aws.png";
 
 const skills = [
   // Frontend
+  { name: "React", level: 95, category: "frontend", icon: "react" },
+  { name: "Next.js", level: 90, category: "frontend", icon: "nextjs" },
+  { name: "TypeScript", level: 90, category: "frontend", icon: "typescript" },
+  { name: "Tailwind CSS", level: 95, category: "frontend", icon: "css" },
+  { name: "Vue.js", level: 85, category: "frontend", icon: "vue" },
+  { name: "JavaScript", level: 95, category: "frontend", icon: "javascript" },
   { name: "HTML5", level: 95, category: "frontend", icon: "html" },
-  { name: "CSS3", level: 90, category: "frontend", icon: "css" },
-  { name: "SASS", level: 85, category: "frontend", icon: "sass" },
-  { name: "JavaScript", level: 90, category: "frontend", icon: "javascript" },
-  { name: "TypeScript", level: 75, category: "frontend", icon: "typescript" },
-  { name: "React", level: 90, category: "frontend", icon: "react" },
-  { name: "Next.js", level: 75, category: "frontend", icon: "nextjs" },
 
   // Backend
-  { name: "Node.js", level: 90, category: "backend", icon: "nodejs" },
-  { name: "Express", level: 85, category: "backend", icon: "express" },
-  { name: "MongoDB", level: 90, category: "backend", icon: "mongodb" },
-  { name: "PostgreSQL", level: 65, category: "backend", icon: "postgresql" },
-  { name: "GraphQL", level: 60, category: "backend", icon: "graphql" },
-  { name: "Java", level: 60, category: "backend", icon: "java" },
-  { name: "Python", level: 60, category: "backend", icon: "python" },
+  { name: "Node.js", level: 95, category: "backend", icon: "nodejs" },
+  { name: "Laravel", level: 90, category: "backend", icon: "laravel" },
+  { name: "Express", level: 90, category: "backend", icon: "express" },
+  { name: "Python", level: 85, category: "backend", icon: "python" },
+  { name: "PostgreSQL", level: 90, category: "backend", icon: "postgresql" },
+  { name: "MongoDB", level: 85, category: "backend", icon: "mongodb" },
+  { name: "GraphQL", level: 80, category: "backend", icon: "graphql" },
 
-  // Tools
-  { name: "Git", level: 90, category: "tools", icon: "git" },
-  { name: "GitHub", level: 90, category: "tools", icon: "github" },
-  { name: "Docker", level: 70, category: "tools", icon: "docker" },
-  { name: "Firebase", level: 80, category: "tools", icon: "firebase" },
+  // DevOps & Tools
+  { name: "Docker", level: 85, category: "tools", icon: "docker" },
+  { name: "Kubernetes", level: 75, category: "tools", icon: "kubernetes" },
+  { name: "AWS", level: 85, category: "tools", icon: "aws" },
+  { name: "Git", level: 95, category: "tools", icon: "git" },
+  { name: "GitHub", level: 95, category: "tools", icon: "github" },
+  { name: "CI/CD", level: 85, category: "tools", icon: "git" },
   { name: "VS Code", level: 95, category: "tools", icon: "vscode" },
-  { name: "Cleark", level: 90, category: "tools", icon: "cleark" },
   { name: "SQL", level: 90, category: "tools", icon: "sql" },
-  { name: "MySQL", level: 90, category: "tools", icon: "mysql" },
 ];
 
 const categories = [
-  { id: "all", label: "All Skills", color: "bg-gradient-to-r from-purple-500 to-pink-500" },
+  { id: "all", label: "All Technologies", color: "bg-gradient-to-r from-purple-500 to-pink-500" },
   { id: "frontend", label: "Frontend", color: "bg-gradient-to-r from-blue-500 to-cyan-500" },
   { id: "backend", label: "Backend", color: "bg-gradient-to-r from-green-500 to-emerald-500" },
-  { id: "tools", label: "Tools", color: "bg-gradient-to-r from-orange-500 to-yellow-500" },
+  { id: "tools", label: "DevOps & Tools", color: "bg-gradient-to-r from-orange-500 to-yellow-500" },
 ];
 
 const iconImages = {
@@ -85,6 +89,10 @@ const iconImages = {
   cleark: clearkIcon,
   sql: SQLIcon,
   mysql: MySQLIcon,
+  laravel: LaravelIcon,
+  vue: vueIcon,
+  kubernetes: kubernetesIcon,
+  aws: awsIcon,
 };
 
 const SkillBar = ({ level }) => (
@@ -155,10 +163,10 @@ export const SkillsSection = () => {
           className="text-center mb-20"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary/80">
-            My Skills
+            Our Technology Stack
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
-            Technologies I've mastered and my proficiency levels
+            Cutting-edge technologies we use to build exceptional digital products
           </p>
         </motion.div>
 
