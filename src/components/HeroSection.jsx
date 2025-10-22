@@ -214,7 +214,7 @@ export const HeroSection = () => {
                 
                 <motion.div className="absolute -bottom-3 left-1/2 transform -translate-x-1/2 bg-background/90 backdrop-blur-sm px-4 py-2 rounded-xl border border-border shadow-lg text-center" initial={{ scale: 0, y: 20 }} animate={{ scale: 1, y: 0 }} transition={{ delay: 2, type: "spring" }}>
                   <div className="text-xs font-mono text-muted-foreground">Powered by</div>
-                  <div className="text-sm font-bold text-foreground">Developer Excellence</div>
+                  <div className="text-sm font-bold text-foreground">Pullstack Developer</div>
                 </motion.div>
               </motion.div>
             </div>
