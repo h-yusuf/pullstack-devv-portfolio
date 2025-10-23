@@ -18,20 +18,19 @@ const projects = [
     status: "Live",
     highlights: ["Business management", "Operations streamline", "Enterprise solutions"]
   },
-  {
+ {
     id: 2,
-    title: "RekomendasiWisataJogja",
-    category: "Tourism Platform",
-    description: "Academic tourism recommendation platform built for Universitas AMIKOM Yogyakarta. Features intelligent recommendation engine and comprehensive travel guides.",
-    image: "/projects/rekomendasiwisatajogja.png",
-    video: "/projects/videos/wisata-demo.mp4",
-    tags: ["React", "Laravel", "PostgreSQL", "API"],
-    demoUrl: "https://rekomendasiwisatajogja.com/",
+    title: "Wonderful Yogyakarta",
+    category: "Tourism & Travel",
+    description: "Premier tourism and travel website showcasing Yogyakarta's rich cultural heritage and attractions. Wonderful Yogyakarta provides comprehensive travel guides, destination recommendations, booking services, and immersive experiences to help travelers discover the beauty and wonder of Indonesia's cultural capital.",
+    image: "/projects/wonderfulyogya.png",
+    video: "/projects/videos/wonderfulyogya-demo.mp4",
+    tags: ["React", "Laravel", "PostgreSQL", "Maps API"],
+    demoUrl: "#",
     githubUrl: "#",
-    featured: true,
-    accentColor: "from-emerald-500 to-teal-600",
+    accentColor: "from-rose-500 to-pink-600",
     status: "Live",
-    highlights: ["Recommendation engine", "Travel guides", "User ratings"]
+    highlights: ["Travel guides", "Destination booking", "Cultural experiences"]
   },
   {
     id: 3,
@@ -40,7 +39,7 @@ const projects = [
     description: "Professional portfolio website for Dr. Jonathan Kwik, AI & International Law Expert. Showcasing expertise, research, and professional achievements.",
     image: "/projects/jonathankwik.png",
     video: "/projects/videos/jonathan-demo.mp4",
-    tags: ["Next.js", "React", "Tailwind CSS", "CMS"],
+    tags: [ "React", "Tailwind CSS", "CMS"],
     demoUrl: "https://jonathankwik.com/",
     githubUrl: "#",
     featured: true,
@@ -50,55 +49,56 @@ const projects = [
   },
   {
     id: 4,
-    title: "E-Commerce Platform",
-    category: "E-commerce",
-    description: "Full-stack e-commerce solution with modern UI/UX, secure payment processing, and inventory management system.",
-    image: "/projects/project4.png",
-    video: "/projects/videos/ecommerce-demo.mp4",
-    tags: ["React", "Node.js", "MongoDB", "Stripe"],
+    title: "AdaJasa",
+    category: "Service Marketplace",
+    description: "Comprehensive service marketplace platform connecting service providers with customers. AdaJasa brings together a wide range of professional services, enabling seamless connections between service seekers and experienced providers with secure transactions and reliable ratings.",
+    image: "/projects/adajasa.png",
+    video: "/projects/videos/adajasa-demo.mp4",
+    tags: ["React", "Node.js", "MongoDB", "Payment Gateway"],
     demoUrl: "#",
     githubUrl: "#",
     accentColor: "from-purple-500 to-indigo-600",
     status: "Live",
-    highlights: ["Product catalog", "Payment integration", "Inventory system"]
+    highlights: ["Service marketplace", "Provider network", "Secure transactions"]
   },
   {
     id: 5,
-    title: "Real-time Chat Application",
-    category: "Communication",
-    description: "High-performance real-time messaging platform with WebSocket support, media sharing, and user presence tracking.",
-    image: "/projects/project5.png",
-    video: "/projects/videos/chat-demo.mp4",
-    tags: ["React", "Node.js", "Socket.IO", "MongoDB"],
+    title: "Moneytrack",
+    category: "Financial Management",
+    description: "Intelligent expense and income tracking web application designed for both individuals and businesses. Moneytrack simplifies financial management with intuitive expense categorization, real-time analytics, and comprehensive reporting features to help users and organizations maintain better control over their finances.",
+    image: "/projects/moneytrack.png",
+    video: "/projects/videos/moneytrack-demo.mp4",
+    tags: ["React", "Node.js", "PostgreSQL", "Chart.js"],
     demoUrl: "#",
     githubUrl: "#",
     accentColor: "from-blue-500 to-cyan-600",
     status: "Live",
-    highlights: ["Real-time messaging", "Media sharing", "User presence"]
+    highlights: ["Expense tracking", "Financial analytics", "Business reports"]
   },
-  {
+    {
     id: 6,
-    title: "Dashboard Analytics",
-    category: "Analytics",
-    description: "Enterprise-grade analytics dashboard with data visualization, real-time metrics, and customizable reports.",
-    image: "/projects/project6.png",
-    video: "/projects/videos/dashboard-demo.mp4",
-    tags: ["React", "Chart.js", "Node.js", "PostgreSQL"],
-    demoUrl: "#",
+    title: "RekomendasiWisataJogja",
+    category: "Tourism Platform",
+    description: "Academic tourism recommendation platform built for Universitas AMIKOM Yogyakarta. Features intelligent recommendation engine and comprehensive travel guides.",
+    image: "/projects/rekomendasiwisatajogja.png",
+    video: "/projects/videos/wisata-demo.mp4",
+    tags: ["Laravel", "MySQL", "Python", "API", "Machine Learning", "AI"],
+    demoUrl: "https://rekomendasiwisatajogja.com/",
     githubUrl: "#",
-    accentColor: "from-rose-500 to-pink-600",
+    featured: true,
+    accentColor: "from-emerald-500 to-teal-600",
     status: "Live",
-    highlights: ["Data visualization", "Real-time metrics", "Custom reports"]
-  }
+    highlights: ["Recommendation engine", "Travel guides", "User ratings"]
+  },
 ];
 
 const categoryColors = {
   "Business Platform": "from-yellow-500/20 to-orange-600/20 text-yellow-600 border-yellow-500/30",
   "Tourism Platform": "from-emerald-500/20 to-teal-600/20 text-emerald-600 border-emerald-500/30",
   "Professional Portfolio": "from-blue-500/20 to-indigo-600/20 text-blue-600 border-blue-500/30",
-  "E-commerce": "from-purple-500/20 to-indigo-600/20 text-purple-600 border-purple-500/30",
-  "Communication": "from-blue-500/20 to-cyan-600/20 text-blue-600 border-blue-500/30",
-  "Analytics": "from-rose-500/20 to-pink-600/20 text-rose-600 border-rose-500/30"
+  "Service Marketplace": "from-purple-500/20 to-indigo-600/20 text-purple-600 border-purple-500/30",
+  "Financial Management": "from-blue-500/20 to-cyan-600/20 text-blue-600 border-blue-500/30",
+  "Tourism & Travel": "from-rose-500/20 to-pink-600/20 text-rose-600 border-rose-500/30"
 };
 
 export const ProjectsSection = () => {
