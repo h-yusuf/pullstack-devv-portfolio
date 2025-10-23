@@ -15,7 +15,7 @@ export const Footer = () => {
   
   const socialLinks = [
     { icon: <Linkedin size={18} />, href: "https://linkedin.com/company/pullstack", label: "LinkedIn" },
-    { icon: <Instagram size={18} />, href: "https://instagram.com/apitt_m.y", label: "Instagram" },
+    { icon: <Instagram size={18} />, href: "https://instagram.com/pullstack.dev", label: "Instagram" },
     { icon: <Youtube size={18} />, href: "https://youtube.com/@pullstack", label: "YouTube" },
     { icon: <Github size={18} />, href: "https://github.com/h-yusuf", label: "GitHub" },
   ];
