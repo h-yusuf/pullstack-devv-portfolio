@@ -25,7 +25,7 @@ const navItems = [
   { name: "Projects", href: "#projects", icon: Briefcase },
   { name: "Testimonials", href: "#testimonials", icon: MessageSquare },
   { name: "Contact", href: "#contact", icon: Mail },
-  { name: "Blog", href: "https://blogni.vercel.app", icon: BookOpen },
+  { name: "Blog", href: "https://pullstack-devv-portfolio.vercel.app", icon: BookOpen },
 ];
 
 const ThemeToggle = () => {

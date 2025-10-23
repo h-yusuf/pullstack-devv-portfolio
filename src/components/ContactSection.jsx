@@ -191,7 +191,7 @@ export const ContactSection = () => {
                   {
                     icon: Instagram,
                     label: "Instagram",
-                    url: "https://www.instagram.com/apitt_m.y",
+                    url: "https://www.instagram.com/pullstack.dev",
                   },
                 ].map((social, index) => (
                   <a
